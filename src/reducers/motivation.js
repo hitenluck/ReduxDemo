@@ -6,7 +6,10 @@ export const searchedMotivation=createReducer({},{
 });
 
 export const motivationCount=createReducer(0,{
-[types.ADD_MOTIVATION](state,action)=>{
+[types.ADD_MOTIVATION](state,action){
     return  state+10;
+},
+[types.SUB_MOTIVATION](state,action){
+    return  state-10;
 }
 });
